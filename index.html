@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+    <script src="js/main.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+</head>
+
+<body>
+    <p>Click the button..</p>
+    <button id="button">Hello world!</button>
+    
+    
+    <script>
+    window.onload = function () {
+    document.getElementById("button").onclick = function (evt) {
+        sayHello()
+    }
+}
+
+
+function sayHello() {
+    var messageDialog = new Windows.UI.Popups.MessageDialog("Hello, world!", "Alert");
+    messageDialog.showAsync();
+}
+    </script>
+</body>
+
+</html>
+
+
